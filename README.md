@@ -37,10 +37,7 @@ The Innovative AI-powered SaaS Website is a cutting-edge web-based application t
 To get started with the Innovative AI-powered SaaS Website, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your/repository.git`
-2. Install the required dependencies: `npm install`
-3. Configure the environment variables: Set up the necessary environment variables for the SaaS Website, such as API keys and database connection details.
-4. Build and run the application: `npm start`
-5. Access the SaaS Website: Open a web browser and navigate to `http://localhost:3000` to access the website.
+2. Access the SaaS Website: Open a web browser and navigate to `http://localhost:8080` to access the website.
 
 ## Documentation
 
