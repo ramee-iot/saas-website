@@ -1,5 +1,5 @@
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
 }
 
 header nav ul {
@@ -28,7 +28,6 @@ header nav button {
     border-radius: 5px;
     padding: 0.5em 2em;
     cursor: pointer;
-    font-family: "Montserrat";
     font-size: medium;
     border: 1px solid black;
     vertical-align: middle;
