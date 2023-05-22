@@ -1,0 +1,99 @@
+body {
+  font-family: "Montserrat";
+}
+
+header nav ul {
+  list-style-type: none;
+  margin:  0;
+  padding: 0;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+header nav ul li {
+  font-size: medium;
+  display: inline;
+}
+
+header nav ul li a {
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header nav button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-size: medium;
+    border: 1px solid black;
+    vertical-align: middle;
+  }
+
+.parent {
+  display: flex;
+  gap: 10px;
+}
+
+div.side-text {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 100px;
+  align-self: center;
+}
+
+div.side-text h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  padding-bottom: 30px;
+}
+
+div.side-text p {
+  font-size: large;
+}
+
+.side-text button {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+div.side-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+div.side-image img {
+  width: 90%;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
