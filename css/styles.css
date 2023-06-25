@@ -310,4 +310,91 @@ img {
 .card__half__width a {
   color: black;
 }
+
 /* Footer */
+.footer{
+  display: flex; /* Usamos flex-box*/
+  flex-direction: row; /* Usamos columnas para sus elementos*/
+  padding: 30px 100px;
+  gap: 1em;
+}
+
+.footer__side{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.seperator {
+  height: 50%;
+  width: 1px;
+  background: black;
+  position: absolute;
+  left: 50%;
+}
+
+.footer__side__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 40px;
+}
+
+.footer__side__column .brand {
+  font-size: 24px; 
+  font-weight: bold;
+  padding-left: 2em;
+}
+
+.footer__side__column span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__side__column .phrase {
+  font-size: 24px; 
+  font-weight: 300;
+}
+
+.footer__side__column p {
+  font-size: 14px;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 3em;
+}
+
+.footer__side__row {
+  display: flex;
+  flex-direction: row;
+  padding: 2em;
+  gap: 120px;
+}
+
+.footer__links a{
+  color: black;
+  font-size: 14;
+  font-weight: 200;
+
+}
+
+.footer__links li {
+  margin-bottom: 8px;
+}
+
+.footer .links__bold {
+  font-weight: bolder;
+}
+
+.footer .links__bold__li {
+  margin-bottom: 22px;
+}
+
+.footer__copyrigth {
+  gap: 1em;
+  font-size: 14px;
+}
