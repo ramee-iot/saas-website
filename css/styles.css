@@ -225,7 +225,6 @@ img {
   padding-left: 100px;
 }
 
-
 .block__black {
   background-color: black;
   width: 80%;
@@ -246,27 +245,37 @@ img {
 .card__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 30px;
   width: 80%;
   margin: auto;
 }
 
 .card__full__width {
   display: flex;
+  flex: 0 0 100%;
 }
 
-.card__full__width img {
-  width: 50%;
+.shapes {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  flex: 1;
+}
+
+.shapes img {
 }
 
 .card__black {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #111827;
+  background-color: black;
   color: white;
   gap: 2em;
   padding: 50px;
+  flex: 2;
 }
 
 .card__tittle {
@@ -277,7 +286,7 @@ img {
 }
 
 .card__tittle span {
-  font-size: 14px
+  font-size: 14px;
 }
 
 .card__tittle h3 {
