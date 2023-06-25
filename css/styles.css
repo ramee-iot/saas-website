@@ -260,11 +260,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 4em;
   flex: 1;
-}
-
-.shapes img {
 }
 
 .card__black {
