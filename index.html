@@ -8,58 +8,54 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Saas Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
+      <a class="logo__name" href="#">TRADE</a>
       <nav>
         <ul>
-          <li style="font-size: large; font-weight: bold">TRADE</li>
-          <li><a href="#">Home </a></li>
+          <li><a href="#">Link 1</a></li>
           <li><a href="#">Link 2</a></li>
           <li><a href="#">Link 3</a></li>
           <li><a href="#">Link 4</a></li>
-          <li style="float: right"><button>Sign Up</button></li>
+          <li>
+            <button>Sign Up</button>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section class="parent">
-      <div class="side-text">
-        <h2>Your best Value Proposition</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-          rerum dolore.
-        </p>
-        <button class="general-button">Start free trial</button>
+    <main class="main">
+      <section class="white-section">
+        <div class="side-text">
+          <h2>Your best Value Proposition</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+            rerum dolore.
+          </p>
+          <button class="general-button">Start free trial</button>
+        </div>
+
+        <div class="side-image">
+          <img src="./images/sample.png" alt="Preview" />
+        </div>
+      </section>
+
+      <div class="container_smooth_gray">
+        <h2>Trusted by the World's Best Companies</h2>
+        <div class="circle-container">
+          <div class="circle_black"></div>
+          <div class="circle_black"></div>
+          <div class="circle_black"></div>
+          <div class="circle_black"></div>
+          <div class="circle_black"></div>
+          <div class="circle_black"></div>
+        </div>
       </div>
 
-      <div class="side-image" style="text-align: center">
-        <img src="./images/sample.png" alt="Preview" />
-      </div>
-    </section>
-
-    <div class="container_smooth_gray">
-      <h2>Trusted by the World's Best Companies</h2>
-      <div class="circle-container">
-        <div class="circle_black"></div>
-        <div class="circle_black"></div>
-        <div class="circle_black"></div>
-        <div class="circle_black"></div>
-        <div class="circle_black"></div>
-        <div class="circle_black"></div>
-      </div>
-    </div>
-
-    <div class="rectangle">
-      <div class="left-side">
-        <div class="text-box">
+      <div class="rectangle">
+        <div class="left-side">
           <p class="font-large">Your Best Value Proposition</p>
           <p class="font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -71,20 +67,24 @@
           </p>
           <div class="little-circle-container">
             <div class="circle_white"></div>
-            <p class="font-small">  Dhaka Oke, Product Designer</p>
+            <p class="font-small">Dhaka Oke, Product Designer</p>
           </div>
         </div>
+        <div class="right-side">
+          <img
+            src="./images/sample_2.png"
+            alt="Imagen del lado derecho"
+            class="border"
+          />
+        </div>
       </div>
-      <div class="right-side">
-        <img src="./images/sample_2.png" alt="Imagen del lado derecho" class="border">
-      </div>
-    </div>
 
-    <section>
-      <h2>Productos destacados</h2>
-    </section>
+      <section>
+        <h2>Productos destacados</h2>
+      </section>
+    </main>
 
-    <footer>
+    <footer class="footer">
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
