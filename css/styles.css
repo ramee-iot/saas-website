@@ -311,11 +311,29 @@ img {
   color: black;
 }
 
+/* Smooth grey card minimal */
+
+
+/* White card minimal */
+.rectangle__white__minimal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 120px;
+}
+
+.rectangle__white__minimal .circle__black {
+  width: 40px;
+  height: 40px;
+}
+
 /* Footer */
 .footer{
   display: flex; /* Usamos flex-box*/
   flex-direction: row; /* Usamos columnas para sus elementos*/
-  padding: 30px 100px;
+  padding: 1.5em 100px;
   gap: 1em;
 }
 
@@ -324,10 +342,11 @@ img {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  padding: 1em;
 }
 
 .seperator {
-  height: 50%;
+  height: 34%;
   width: 1px;
   background: black;
   position: absolute;
@@ -338,7 +357,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 40px;
+  padding: 0 40px;
 }
 
 .footer__side__column .brand {
@@ -364,14 +383,14 @@ img {
 .footer__left {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 1em;
   gap: 3em;
 }
 
 .footer__side__row {
   display: flex;
   flex-direction: row;
-  padding: 2em;
+  padding: 0 40px;
   gap: 120px;
 }
 
