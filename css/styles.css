@@ -315,7 +315,7 @@ img {
 
 
 /* White card minimal */
-.rectangle__white__minimal {
+.rectangle__white__minimal, .rectangle__grey__minimal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,6 +327,22 @@ img {
 .rectangle__white__minimal .circle__black {
   width: 40px;
   height: 40px;
+}
+
+/* Grey card minimal */
+.rectangle__grey__minimal {
+  background-color: #f2f2f2;
+}
+
+.inner__box {
+  width: 300px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
 }
 
 /* Footer */
