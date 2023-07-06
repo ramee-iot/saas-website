@@ -35,15 +35,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em 3em;
+  padding: 1.8em 4em;
 }
 
-.logo__name {
+.header__logo__name {
   font-size: 24px;
   font-weight: bold;
 }
 
-.header ul {
+.header__links {
   display: flex;
   align-items: center;
   font-size: medium;
@@ -64,6 +64,10 @@ img {
   font-weight: 300;
   border: 1px solid black;
   vertical-align: middle;
+}
+
+.header i {
+  display: none;
 }
 
 /* Main styles */
@@ -123,10 +127,10 @@ img {
   align-items: center;
 }
 
-/* smooth gray section*/
+/* Smooth gray section*/
 .container__smooth__gray {
   background-color: #f2f2f2;
-  padding: 35px;
+  padding: 2em 0em;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -136,7 +140,7 @@ img {
 .circle__container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 2em;
 }
 
 .circle__black {
@@ -146,7 +150,7 @@ img {
   border-radius: 50%;
 }
 
-/* dark gray section*/
+/* Dark gray section*/
 .rectangle {
   background-color: #333333; /* Fondo gris oscuro */
   display: flex;
@@ -189,7 +193,7 @@ img {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: row-reverse;
-  padding: 5em 8em;
+  padding: 2em 8em;
   gap: 1em;
 }
 
@@ -201,9 +205,13 @@ img {
   background-color: black;
 }
 
+.rectangle__smooth__grey img {
+  width: 70%;
+}
+
 /* White rectangle section  */
 .rectangle__white {
-  background-color: whites;
+  background-color: white;
   display: flex;
   padding: 5em 8em;
   gap: 1em;
@@ -211,6 +219,7 @@ img {
 
 .rectangle__white .left__side {
   color: black;
+  padding-left: 100px;
 }
 
 .rectangle__white .circle__little {
@@ -219,10 +228,6 @@ img {
 
 .rectangle__white .right__side {
   position: relative;
-}
-
-.rectangle__white .left__side {
-  padding-left: 100px;
 }
 
 .block__black {
@@ -311,8 +316,6 @@ img {
   color: black;
 }
 
-/* Smooth grey card minimal */
-
 /* White card minimal */
 .rectangle__white__minimal,
 .rectangle__grey__minimal {
@@ -353,7 +356,7 @@ img {
 
 .inner__box p {
   font-size: 20px;
-  font-weight: 300; 
+  font-weight: 300;
 }
 
 /* Footer */
@@ -373,7 +376,7 @@ img {
 }
 
 .seperator {
-  height: 34%;
+  height: 24%;
   width: 1px;
   background: black;
   position: absolute;
@@ -442,4 +445,667 @@ img {
 .footer__copyrigth {
   gap: 1em;
   font-size: 14px;
+}
+
+/* Media queries */
+
+/* Tablet  
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1180px) {
+  /*Header tablet*/
+  .header__links {
+    display: none;
+  }
+  .header i {
+    display: inline;
+  }
+
+  /*First section tablet*/
+  .white__section {
+    padding: 3em 4em;
+    gap: 2em;
+  }
+
+  .side__text {
+    padding: 1.5em 0;
+  }
+
+  .side__text h2 {
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  .general__button {
+    background-color: darkblue;
+  }
+
+  .side__image {
+    max-width: 400px;
+  }
+
+  /* Smooth gray section tablet*/
+  .container__smooth__gray {
+    padding: 4em;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .circle__container {
+    gap: 1em;
+  }
+
+  .circle__black {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Dark gray section tablet*/
+  .rectangle {
+    padding: 3em 2em;
+    gap: 2em;
+    flex-direction: column;
+  }
+
+  .left__side {
+    padding: 1em;
+  }
+
+  .left__side .font__large {
+    align-self: center;
+    font-weight: 500;
+  }
+
+  .right__side img {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  /* Smooth grey section 2 tablet */
+  .rectangle__smooth__grey {
+    padding: 3em 2em;
+    gap: 3em;
+  }
+
+  .rectangle__smooth__grey .left__side {
+    font-weight: 500;
+    gap: 2em;
+  }
+
+  .rectangle__smooth__grey .circle__little {
+    background-color: orange;
+  }
+
+  .rectangle__smooth__grey img {
+    max-width: 300px;
+  }
+
+  /* White rectangle section tablet */
+  .rectangle__white {
+    flex-direction: column;
+    padding: 3em 1.5em;
+    gap: 2em;
+  }
+
+  .rectangle__white .left__side {
+    padding: 0;
+  }
+
+  .block__black {
+    display: none;
+  }
+
+  .block__smooth__grey {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: white;
+    border: #6b7280 1px solid;
+  }
+
+  /* Cards container tablet*/
+  .card__container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3em;
+    gap: 3em;
+  }
+
+  .shapes,
+  .card__black {
+    padding: 2em;
+  }
+
+  .shapes img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .card__tittle {
+    width: 80%;
+  }
+
+  .card__tittle h3 {
+    font-size: 2em;
+  }
+
+  /* White card minimal tablet*/
+  .rectangle__white__minimal {
+    width: 90%;
+    padding: 4em;
+    margin: auto;
+  }
+
+  .rectangle__white__minimal .circle__black {
+    width: 5em;
+    height: 5em;
+  }
+
+  /* Grey card minimal tablet*/
+  .inner__box {
+    width: 100vw;
+    padding: 0 3em;
+    gap: 3em;
+  }
+
+  /* Footer tablet*/
+  .footer {
+    padding: 3em 1.5em;
+    gap: 0;
+  }
+
+  .footer__side {
+    gap: 1em;
+    padding: 0 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .footer__side__column {
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+  }
+
+  .footer__side__column .brand {
+    padding-left: 0;
+  }
+
+  .footer__side__column p {
+    font-size: 11px;
+  }
+
+  .footer__left {
+    display: flex;
+    padding: 1em;
+    gap: 2 xem;
+  }
+
+  .footer__side__row {
+    gap: 5em;
+  }
+
+  .footer__links li,
+  .footer .links__bold__li {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /*Header  Mobiles (Landscape)*/
+  .header__links {
+    display: none;
+  }
+  .header i {
+    display: inline;
+  }
+
+  /*First section  Mobiles (Landscape)*/
+  .white__section {
+    padding: 3em 1.5em;
+    gap: 2em;
+  }
+
+  .side__text {
+    padding: 1em 0;
+  }
+
+  .side__text h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .side__text p {
+    font-size: 1em;
+  }
+
+  .general__button {
+    background-color: darkblue;
+    padding: 0.2em 1em;
+    font-size: 1em;
+  }
+
+  .side__image {
+    max-width: 200px;
+  }
+
+  /* Smooth gray section  Mobiles (Landscape)*/
+  .container__smooth__gray {
+    padding: 2em;
+    font-size: 1.5em;
+  }
+
+  .circle__container {
+    gap: 0.5em;
+  }
+
+  .circle__black {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  /* Dark gray section  Mobiles (Landscape)*/
+  .rectangle {
+    padding: 3em 1.5em;
+    gap: 2em;
+    flex-direction: column;
+  }
+
+  .left__side {
+    padding: 1em;
+  }
+
+  .left__side .font__large {
+    align-self: center;
+    font-weight: 500;
+  }
+
+  .right__side img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  /* Smooth grey section 2  Mobiles (Landscape) */
+  .rectangle__smooth__grey {
+    padding: 3em 1em;
+    gap: 2em;
+  }
+
+  .rectangle__smooth__grey .left__side {
+    font-weight: 500;
+    gap: 1em;
+  }
+
+  .rectangle__smooth__grey .circle__little {
+    background-color: orange;
+  }
+
+  .rectangle__smooth__grey img {
+    max-width: 250px;
+  }
+
+  /* White rectangle section  Mobiles (Landscape) */
+  .rectangle__white {
+    flex-direction: column;
+    padding: 3em 1.5em;
+    gap: 1.5em;
+  }
+
+  .rectangle__white .left__side {
+    padding: 0;
+  }
+
+  .block__black {
+    display: none;
+  }
+
+  .block__smooth__grey {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: white;
+    border: #6b7280 1px solid;
+  }
+
+  /* Cards container  Mobiles (Landscape)*/
+  .card__container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+
+  .shapes,
+  .card__black {
+    padding: 1em;
+  }
+
+  .shapes img {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .card__tittle {
+    width: 100%;
+  }
+
+  .card__tittle h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .card__half__width {
+    padding: 1.5em;
+  }
+
+  .card__half__width p,
+  .card__half__width a {
+    font-size: 0.9em;
+  }
+
+  /* White card minimal  Mobiles (Landscape)*/
+  .rectangle__white__minimal {
+    width: 90%;
+    padding: 4em;
+    margin: auto;
+  }
+
+  .rectangle__white__minimal .circle__black {
+    width: 4em;
+    height: 4em;
+  }
+
+  /* Grey card minimal  Mobiles (Landscape)*/
+  .inner__box {
+    width: 100vw;
+    padding: 0 2em;
+    gap: 1.5em;
+  }
+
+  /* Footer  Mobiles (Landscape)*/
+  .footer {
+    padding: 3em 1em;
+    gap: 1.5em;
+    flex-direction: column;
+  }
+
+  .footer__side {
+    gap: 1em;
+    padding: 0 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .footer__side__column {
+    flex-direction: column;
+    padding: 0.5em 1.5em;
+    align-items: center;
+  }
+
+  .footer__side__column .brand {
+    padding-left: 0;
+  }
+
+  .footer__side__column p {
+    font-size: 1em;
+    max-width: 450px;
+  }
+
+  .footer__left {
+    padding: 1em;
+    gap: 1em;
+  }
+
+  .footer__side__row {
+    gap: 10em;
+  }
+
+  .footer__links li,
+  .footer .links__bold__li {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+  }
+}
+
+/* Phone 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /*Header phone*/
+  .header {
+    padding: 1.5em 3em;
+  }
+
+  .header__links {
+    display: none;
+  }
+  .header i {
+    display: inline;
+  }
+
+  /*First section phone*/
+  .white__section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3em 2em;
+    gap: 1em;
+  }
+
+  .side__text {
+    padding: 1.5em;
+  }
+
+  .side__text h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .general__button {
+    align-self: center;
+    background-color: darkblue;
+  }
+
+  .side__image {
+    max-width: 360px;
+    align-self: center;
+  }
+
+  /* Smooth gray section phone*/
+  .container__smooth__gray {
+    padding: 3em 2em;
+    font-weight: 400;
+  }
+
+  .circle__container {
+    gap: 1em;
+  }
+
+  .circle__black {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+  }
+
+  /* Dark gray section phone*/
+  .rectangle {
+    padding: 4em 2em;
+    gap: 4em;
+    flex-direction: column;
+  }
+
+  .left__side {
+    padding: 1em;
+  }
+
+  .right__side img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  /* Smooth grey section 2 phone */
+  .rectangle__smooth__grey {
+    flex-direction: column;
+    padding: 3em 2em;
+    gap: 3em;
+  }
+
+  .rectangle__smooth__grey .left__side {
+    font-weight: 500;
+    gap: 2em;
+  }
+
+  .rectangle__smooth__grey .circle__little {
+    background-color: darkblue;
+  }
+
+  .rectangle__smooth__grey img {
+    max-width: 300px;
+  }
+
+  /* White rectangle section phone */
+  .rectangle__white {
+    flex-direction: column;
+    padding: 3em 2em;
+    gap: 2em;
+  }
+
+  .rectangle__white .circle__little {
+    background-color: darkblue;
+  }
+
+  .rectangle__white .left__side {
+    padding: 0;
+  }
+
+  .block__black {
+    display: none;
+  }
+
+  .block__smooth__grey {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: white;
+    border: #6b7280 1px solid;
+  }
+
+  /* Cards container phone*/
+  .card__container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 0;
+    gap: 3em;
+  }
+
+  .card__full__width {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .shapes {
+    background-color: black;
+    padding: 1em;
+  }
+
+  .shapes img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .card__black {
+    padding: 2em 1.5em;
+  }
+
+  .card__tittle {
+    width: 100%;
+    gap: 0.5em;
+  }
+
+  .card__tittle h3 {
+    font-size: 30px;
+  }
+
+  .card__half__width {
+    margin: 0 3em;
+  }
+
+  /* White card minimal phone*/
+  .rectangle__white__minimal {
+    padding: 3em;
+  }
+
+  .rectangle__white__minimal .circle__black {
+    width: 5em;
+    height: 5em;
+  }
+
+  /* Grey card minimal phone*/
+  .inner__box {
+    width: 100vw;
+    padding: 1.5em;
+    gap: 1.5em;
+  }
+
+  /* Footer phone*/
+  .footer {
+    flex-direction: column; /* Usamos columnas para sus elementos*/
+    padding: 1.5em;
+    gap: 1em;
+  }
+
+  .footer__side {
+    gap: 1em;
+    padding: 0 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seperator {
+    display: none;
+  }
+
+  .footer__side__column {
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+  }
+
+  .footer__side__column .brand {
+    padding-left: 0;
+  }
+
+  .footer__left {
+    display: flex;
+    padding: 1em;
+    gap: 3em;
+  }
+
+  .footer__side__row {
+    gap: 5em;
+  }
+
+  .footer__links li,
+  .footer .links__bold__li {
+    margin-bottom: 6px;
+  }
 }
