@@ -38,12 +38,12 @@ img {
   padding: 1.8em 4em;
 }
 
-.logo__name {
+.header__logo__name {
   font-size: 24px;
   font-weight: bold;
 }
 
-.header ul {
+.header__links {
   display: flex;
   align-items: center;
   font-size: medium;
@@ -64,6 +64,10 @@ img {
   font-weight: 300;
   border: 1px solid black;
   vertical-align: middle;
+}
+
+.header i {
+  display: none;
 }
 
 /* Main styles */
@@ -123,10 +127,10 @@ img {
   align-items: center;
 }
 
-/* smooth gray section*/
+/* Smooth gray section*/
 .container__smooth__gray {
   background-color: #f2f2f2;
-  padding: 35px;
+  padding: 2em 0em;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -136,7 +140,7 @@ img {
 .circle__container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 2em;
 }
 
 .circle__black {
@@ -146,7 +150,7 @@ img {
   border-radius: 50%;
 }
 
-/* dark gray section*/
+/* Dark gray section*/
 .rectangle {
   background-color: #333333; /* Fondo gris oscuro */
   display: flex;
@@ -208,7 +212,7 @@ img {
 
 /* White rectangle section  */
 .rectangle__white {
-  background-color: whites;
+  background-color: white;
   display: flex;
   padding: 5em 8em;
   gap: 1em;
@@ -216,6 +220,7 @@ img {
 
 .rectangle__white .left__side {
   color: black;
+  padding-left: 100px;
 }
 
 .rectangle__white .circle__little {
@@ -224,10 +229,6 @@ img {
 
 .rectangle__white .right__side {
   position: relative;
-}
-
-.rectangle__white .left__side {
-  padding-left: 100px;
 }
 
 .block__black {
@@ -315,8 +316,6 @@ img {
 .card__half__width a {
   color: black;
 }
-
-/* Smooth grey card minimal */
 
 /* White card minimal */
 .rectangle__white__minimal,
@@ -448,3 +447,236 @@ img {
   gap: 1em;
   font-size: 14px;
 }
+
+
+/* Media queries */
+/* Phone */
+@media (max-width:480px){
+
+  /*Header phone*/
+  .header {
+    padding: 1.5em 3em;
+  }
+
+  .header__links{
+    display: none;
+  }
+  .header i {
+    display: inline;
+  }
+
+  /*First section phone*/
+.white__section {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3em 2em;
+  gap: 1em;
+}
+
+.side__text {
+  padding: 1.5em;
+}
+
+.side__text h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.general__button {
+  align-self: center;
+  background-color: darkblue;
+}
+
+.side__image {
+  max-width: 360px;
+  align-self: center;
+}
+
+/* Smooth gray section phone*/
+.container__smooth__gray {
+  padding: 3em 2em;
+  font-weight: 400;
+}
+
+.circle__container {
+  gap: 1em;
+}
+
+.circle__black {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+}
+
+/* Dark gray section phone*/
+.rectangle {
+  padding: 4em 2em;
+  gap: 4em;
+  flex-direction: column;
+}
+
+.left__side {
+  padding: 1em;
+}
+
+.right__side img{
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Smooth grey section 2 phone */
+.rectangle__smooth__grey {
+  flex-direction: column;
+  padding: 3em 2em;
+  gap: 3em;
+}
+
+.rectangle__smooth__grey .left__side {
+  font-weight: 500;
+  gap: 2em;
+}
+
+.rectangle__smooth__grey .circle__little {
+  background-color: darkblue;
+}
+
+.rectangle__smooth__grey img {
+  max-width: 300px;
+}
+
+/* White rectangle section phone */
+.rectangle__white {
+  flex-direction: column;
+  padding: 3em 2em;
+  gap: 2em;
+}
+
+.rectangle__white .circle__little {
+  background-color: darkblue;
+}
+
+.rectangle__white .left__side {
+  padding: 0;
+}
+
+.block__black {
+  display: none;
+}
+
+.block__smooth__grey {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  background-color: white;
+  border: #6b7280 1px solid;
+}
+
+/* Cards container phone*/
+.card__container {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0;
+  gap: 3em;
+}
+
+.card__full__width {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.shapes {
+  background-color: black;
+  padding: 1em;
+}
+
+.shapes img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.card__black {
+  padding: 2em 1.5em;
+}
+
+.card__tittle {
+  width: 100%;
+  gap: 0.5em;
+}
+
+.card__tittle h3 {
+  font-size: 30px;
+}
+
+.card__half__width {
+  margin: 0 3em;
+}
+
+/* White card minimal phone*/
+.rectangle__white__minimal {
+  padding: 3em;
+}
+
+.rectangle__white__minimal .circle__black {
+  width: 5em;
+  height: 5em;
+}
+
+/* Grey card minimal phone*/
+.inner__box {
+  width: 100vw;
+  padding: 1.5em;
+  gap: 1.5em;
+}
+
+/* Footer phone*/
+.footer {
+  flex-direction: column; /* Usamos columnas para sus elementos*/
+  padding: 1.5em;
+  gap: 1em;
+}
+
+.footer__side {
+  gap: 1em;
+  padding: 0 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seperator {
+  display: none;
+}
+
+.footer__side__column {
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+}
+
+.footer__side__column .brand {
+  padding-left: 0;
+}
+
+.footer__side__column p {
+  display: none;
+}
+
+.footer__left {
+  display: flex;
+  padding: 1em;
+  gap: 3em;
+}
+
+.footer__side__row {
+  gap: 5em;
+}
+
+.footer__links li, .footer .links__bold__li  {
+  margin-bottom: 6px;
+}
+
+}
+
+/* Tablet */
+
