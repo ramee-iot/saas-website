@@ -811,7 +811,8 @@ img {
     padding: 1.5em;
   }
 
-  .card__half__width p, .card__half__width a {
+  .card__half__width p,
+  .card__half__width a {
     font-size: 0.9em;
   }
 
