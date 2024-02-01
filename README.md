@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The Innovative AI-powered SaaS Website is a cutting-edge web-based application that harnesses the power of Artificial Intelligence (AI) and offers a range of new features to revolutionize the software experience. This README file provides an overview of the SaaS website and its key features, guiding developers and users through its functionalities.
+The Innovative AI-powered SaaS Website is a cutting-edge web-based application that harnesses the power of Artificial Intelligence (AI) for creating interfaces.
 
 <p align="center"> 
   https://ramee-iot.github.io/saas-website/
